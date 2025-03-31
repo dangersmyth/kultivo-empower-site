@@ -5,8 +5,8 @@ import BlogPostCard from "@/components/BlogPostCard";
 import { blogPosts } from "@/data/blogPosts";
 
 const BlogSection = () => {
-  // Get only the first 3 blog posts
-  const featuredPosts = blogPosts.slice(0, 3);
+  // Get only the first 2 blog posts
+  const featuredPosts = blogPosts.slice(0, 2);
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -19,7 +19,7 @@ const BlogSection = () => {
         </div>
 
         {/* Blog post previews - now using BlogPostCard component */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {featuredPosts.map((post) => (
             <BlogPostCard key={post.slug} post={post} />
           ))}
@@ -37,3 +37,4 @@ const BlogSection = () => {
 };
 
 export default BlogSection;
+

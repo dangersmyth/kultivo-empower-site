@@ -41,29 +41,30 @@ const InfoSection = ({
             )}
           </div>
 
-          {/* Image with enhanced visual effects */}
+          {/* Image with iPhone bezel */}
           <div className={imageOnRight ? "order-2" : "order-1 md:order-2"}>
-            <div className="transform perspective-1200 hover:scale-105 transition-transform duration-300">
-              <div className="relative">
-                <img
-                  src={image}
-                  alt={imageAlt}
-                  className="w-full h-auto rounded-lg shadow-xl transform rotate-1 hover:rotate-0 transition-transform duration-300"
-                  style={{
-                    transformStyle: "preserve-3d",
-                    transform: "rotateY(-5deg) rotateX(5deg)",
-                    boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
-                  }}
-                />
-                {/* Subtle highlight effect */}
-                <div 
-                  className="absolute inset-0 rounded-lg bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-50"
-                  style={{ mixBlendMode: "overlay" }}
-                ></div>
-                {/* Bottom shadow for depth */}
-                <div 
-                  className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-4/5 h-4 bg-black/20 rounded-full blur-md"
-                ></div>
+            <div className="flex justify-center items-center">
+              <div className="relative max-w-xs mx-auto">
+                {/* iPhone Bezel */}
+                <div className="relative bg-black rounded-[3rem] p-2 shadow-xl">
+                  {/* Notch */}
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/4 h-7 bg-black rounded-b-3xl z-10"></div>
+                  
+                  {/* Screen */}
+                  <div className="relative bg-white rounded-[2.5rem] overflow-hidden" style={{ 
+                    aspectRatio: "9/19.5" 
+                  }}>
+                    {/* App image */}
+                    <img
+                      src={image}
+                      alt={imageAlt}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  {/* Home indicator */}
+                  <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gray-300 rounded-full"></div>
+                </div>
               </div>
             </div>
           </div>

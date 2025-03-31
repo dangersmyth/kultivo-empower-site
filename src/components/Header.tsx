@@ -10,13 +10,16 @@ const Header = () => {
   return (
     <header className="py-4 border-b border-gray-100 bg-white/90 backdrop-blur-sm sticky top-0 z-50">
       <div className="kultivo-container flex justify-between items-center">
-        {/* Logo */}
+        {/* Logo - now explicitly linked to home */}
         <Link to="/" className="flex items-center">
           <span className="font-bold text-2xl text-kultivo-600">Kultivo</span>
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation - with added Home link */}
         <nav className="hidden md:flex items-center space-x-8">
+          <Link to="/" className="text-foreground hover:text-kultivo-600 transition-colors">
+            Home
+          </Link>
           <Link to="/blog" className="text-foreground hover:text-kultivo-600 transition-colors">
             Blog
           </Link>
@@ -37,10 +40,17 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation - with added Home link */}
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 z-50 animate-fade-in">
           <div className="kultivo-container py-4 flex flex-col space-y-4">
+            <Link 
+              to="/" 
+              className="text-foreground hover:text-kultivo-600 transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
             <Link 
               to="/blog" 
               className="text-foreground hover:text-kultivo-600 transition-colors py-2"

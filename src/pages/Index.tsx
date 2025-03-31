@@ -16,11 +16,11 @@ const Index = () => {
         {/* Static Information Section */}
         <InfoSection
           title="Take control of your financial future"
-          description="Kultivo provides you with the tools and insights you need to manage your finances effectively. Our comprehensive platform offers personalized recommendations, expense tracking, and goal setting to help you achieve financial wellness. Start your journey to financial freedom today."
-          image="/lovable-uploads/04ba12ea-01d4-4b35-b361-7222b346b028.png"
+          description="Kultivo helps you improve your financial wellbeing. Our comprehensive platform offers personalised tips based on your financial situation. We'll also help you get access to finance and financial resources when you need them. Start your journey to financial freedom today."
+          image="/lovable-uploads/aa8a2e82-d8d8-4364-a62a-456387d7310b.png"
           imageAlt="Kultivo app dashboard showing financial insights"
-          buttonText="Learn More"
-          buttonLink="/features"
+          buttonText="Sign Up"
+          buttonLink="/signup"
           imageOnRight={true}
           bgClassName="bg-gradient-to-br from-blue-50 to-teal-50"
         />

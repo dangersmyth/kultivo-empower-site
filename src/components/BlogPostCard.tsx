@@ -19,17 +19,17 @@ const BlogPostCard = ({ post }: BlogPostCardProps) => {
           alt={post.title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
+        <Badge 
+          variant={post.type === "Quiz" ? "default" : "secondary"} 
+          className={`absolute top-3 right-3 px-2 py-1 text-xs font-bold text-white ${
+            post.type === "Quiz" 
+              ? "bg-kultivo-600 hover:bg-kultivo-700" 
+              : "bg-gray-700 hover:bg-gray-800"
+          }`}
+        >
+          {post.type}
+        </Badge>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-5">
-          <Badge 
-            variant={post.type === "Quiz" ? "default" : "secondary"} 
-            className={`mb-2 ${
-              post.type === "Quiz" 
-                ? "bg-kultivo-600 hover:bg-kultivo-700" 
-                : "bg-gray-700 hover:bg-gray-800"
-            }`}
-          >
-            {post.type}
-          </Badge>
           <h3 className="text-white text-xl font-bold leading-tight">{post.title}</h3>
         </div>
       </div>

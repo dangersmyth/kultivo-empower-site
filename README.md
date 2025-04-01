@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/e770b994-d17c-4045-85a9-89882cbaf0e8
+**URL**: https://github.com/dangersmyth/kultivo-empower-site.git
 
 ## How can I edit this code?
 

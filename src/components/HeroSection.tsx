@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -21,11 +20,6 @@ const heroImages = [
     alt: "People laughing together",
     heading: "Achieve your money goals",
     caption: "good times are better when money isn't a worry"
-  },
-  {
-    url: "/lovable-uploads/28c9359e-96e7-4d2e-97b5-cd5a0e51cf2e.png",
-    alt: "Woman smiling with pink hair",
-    heading: "Stress less about low bank balances",
   }
 ];
 

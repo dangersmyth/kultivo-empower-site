@@ -8,16 +8,19 @@ const heroImages = [
     url: "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     alt: "Group of happy diverse friends smiling",
     heading: "Empower your financial future",
+    caption: "more financial freedom, more good times"
   },
   {
     url: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     alt: "Woman smiling while using laptop",
     heading: "Stress less about finances",
+    caption: "Money mastery made simple"
   },
   {
     url: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     alt: "People laughing together",
     heading: "Achieve your money goals",
+    caption: "good times are better when money isn't a worry"
   },
   {
     url: "/lovable-uploads/28c9359e-96e7-4d2e-97b5-cd5a0e51cf2e.png",
@@ -73,6 +76,14 @@ const HeroSection = () => {
           {/* Content */}
           <div className="relative z-20 h-full flex flex-col justify-center kultivo-container">
             <h1 className="hero-text max-w-3xl">{image.heading}</h1>
+            
+            {/* Caption Text (new) */}
+            {image.caption && (
+              <p className="text-white/90 text-xl md:text-2xl font-medium mt-4 max-w-2xl">
+                {image.caption}
+              </p>
+            )}
+            
             <div className="mt-8">
               <Button size="lg" className="bg-kultivo-500 hover:bg-kultivo-600 text-white px-8 py-6 text-lg">
                 Get started

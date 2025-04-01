@@ -37,6 +37,8 @@ const Index = () => {
           buttonText="Get Started"
           buttonLink="/signup"
           imageOnRight={false}
+          // Remove iPhone bezel styling
+          isPlainImage={true}
         />
       </main>
       <Footer />

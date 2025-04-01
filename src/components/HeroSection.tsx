@@ -62,35 +62,32 @@ const HeroSection = () => {
           }}
         >
           {/* Darker gradient overlay for better text visibility */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/70 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-10" />
           <img
             src={image.url}
             alt={image.alt}
             className="w-full h-full object-cover"
           />
+                    
+          {/* Caption and heading positioned absolutely in the center */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20 px-6 md:px-12">
+            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+              {image.heading}
+            </h1>
           
-          {/* Content with modern styling for better visibility */}
-          <div className="relative z-20 h-full flex flex-col justify-center kultivo-container">
-            <div className="max-w-3xl">
-              <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
-                {image.heading}
-              </h1>
-              
-              {/* Caption Text with improved visibility and modern styling */}
-              {image.caption && (
-                <p className="text-white text-xl md:text-2xl font-medium mt-2 max-w-2xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] border-l-4 border-kultivo-500 pl-4">
-                  {image.caption}
-                </p>
-              )}
-              
-              <div className="mt-8">
-                <Button 
-                  size="lg" 
-                  className="bg-kultivo-500 hover:bg-kultivo-600 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  Get started
-                </Button>
-              </div>
+            {image.caption && (
+              <p className="text-white text-xl md:text-2xl font-medium mt-2 max-w-2xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] border-l-4 border-kultivo-500 pl-4">
+                {image.caption}
+              </p>
+            )}
+          
+            <div className="mt-8">
+              <Button 
+                size="lg" 
+                className="bg-kultivo-500 hover:bg-kultivo-600 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                Get started
+              </Button>
             </div>
           </div>
         </div>

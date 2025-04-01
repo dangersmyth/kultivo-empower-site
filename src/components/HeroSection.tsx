@@ -66,28 +66,31 @@ const HeroSection = () => {
             zIndex: index === currentImageIndex ? 10 : 0,
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10" />
+          {/* Darker gradient overlay for better text visibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/50 z-10" />
           <img
             src={image.url}
             alt={image.alt}
             className="w-full h-full object-cover"
           />
           
-          {/* Content */}
+          {/* Content with improved visibility */}
           <div className="relative z-20 h-full flex flex-col justify-center kultivo-container">
-            <h1 className="hero-text max-w-3xl">{image.heading}</h1>
-            
-            {/* Caption Text (new) */}
-            {image.caption && (
-              <p className="text-white/90 text-xl md:text-2xl font-medium mt-4 max-w-2xl">
-                {image.caption}
-              </p>
-            )}
-            
-            <div className="mt-8">
-              <Button size="lg" className="bg-kultivo-500 hover:bg-kultivo-600 text-white px-8 py-6 text-lg">
-                Get started
-              </Button>
+            <div className="max-w-3xl">
+              <h1 className="hero-text text-white drop-shadow-lg">{image.heading}</h1>
+              
+              {/* Caption Text with improved visibility */}
+              {image.caption && (
+                <p className="text-white text-xl md:text-2xl font-medium mt-4 max-w-2xl drop-shadow-lg">
+                  {image.caption}
+                </p>
+              )}
+              
+              <div className="mt-8">
+                <Button size="lg" className="bg-kultivo-500 hover:bg-kultivo-600 text-white px-8 py-6 text-lg">
+                  Get started
+                </Button>
+              </div>
             </div>
           </div>
         </div>

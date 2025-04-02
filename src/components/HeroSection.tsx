@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useRouter } from "next/router";
+
 
 const heroImages = [
   {
@@ -48,6 +50,12 @@ const HeroSection = () => {
     setCurrentImageIndex(index);
   };
 
+  const router = useRouter();
+
+  const handleSignUp = () => {
+    router.push("/ComingSoon");  // Navigate to ComingSoon.tsx
+  };
+  
   return (
     <section className="relative h-[70vh] md:h-[80vh] overflow-hidden">
       {/* Hero Images */}
@@ -84,6 +92,7 @@ const HeroSection = () => {
             <div className="mt-8">
               <Button 
                 size="lg" 
+                onClick={handleSignUp}  // Add this
                 className="bg-kultivo-500 hover:bg-kultivo-600 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Get started
@@ -128,5 +137,8 @@ const HeroSection = () => {
     </section>
   );
 };
+
+
+
 
 export default HeroSection;

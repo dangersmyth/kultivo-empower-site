@@ -2,7 +2,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useRouter } from "next/router";
+import { useNavigate } from 'react-router-dom';
+
 
 
 const heroImages = [
@@ -50,10 +51,10 @@ const HeroSection = () => {
     setCurrentImageIndex(index);
   };
 
-  const router = useRouter();
-
+  const navigate = useNavigate();  // Initialize navigate
+  
   const handleSignUp = () => {
-    router.push("/ComingSoon");  // Navigate to ComingSoon.tsx
+    navigate("/ComingSoon");  // Navigate to the ComingSoon page
   };
   
   return (
@@ -92,7 +93,7 @@ const HeroSection = () => {
             <div className="mt-8">
               <Button 
                 size="lg" 
-                onClick={handleSignUp}  // Add this
+                onClick={handleSignUp}  // This will trigger the navigate function
                 className="bg-kultivo-500 hover:bg-kultivo-600 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Get started

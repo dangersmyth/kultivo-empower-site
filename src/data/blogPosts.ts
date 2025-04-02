@@ -8,6 +8,8 @@ export interface BlogPost {
   content?: string;
 }
 
+import { marked } from "marked";
+
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
@@ -24,76 +26,70 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.",
-    content: `<h1>Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?</h1>
+    content: `# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
 
-<p class="lead">Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.</p>
+**Excerpt:**  
+Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.
 
-<hr />
+---
 
-<h2>The Affordability Equation: Income vs. Expenses</h2>
+## The Affordability Equation: Income vs. Expenses
 
-<p>At its core, borrowing capacity boils down to affordability. Lenders want to ensure you can comfortably repay the loan without undue financial stress. This involves a fundamental assessment of your income and expenses.</p>
+At its core, borrowing capacity boils down to affordability. Lenders want to ensure you can comfortably repay the loan without undue financial stress. This involves a fundamental assessment of your income and expenses.
 
-<p>Think of it as a simple equation:</p>
+Think of it as a simple equation:
 
-<p><strong>Income - Expenses = Funds Available for Repayment</strong></p>
+**Income - Expenses = Funds Available for Repayment**
 
-<p>Ideally, the funds available for repayment should be greater than the estimated loan repayments. This ensures you can meet your loan obligations without compromising your essential living expenses.</p>
+Ideally, the funds available for repayment should be greater than the estimated loan repayments. This ensures you can meet your loan obligations without compromising your essential living expenses.
 
-<hr />
+---
 
-<h2>Income: Not All Income is Created Equal</h2>
+## Income: Not All Income is Created Equal
 
-<p>While the equation seems straightforward, the nuances lie in how lenders assess your income and expenses.</p>
+While the equation seems straightforward, the nuances lie in how lenders assess your income and expenses.
 
-<ul>
-  <li><strong>Stable and Consistent Income:</strong> Lenders prefer stable and predictable income sources, such as a regular salary. This type of income provides a reliable foundation for assessing your repayment capacity.</li>
-  <li><strong>Variable Income:</strong> If you have variable income (e.g., part-time work, shift work, bonuses, or self-employment income), lenders may apply a "haircut" – meaning they might only consider a portion of that income when calculating your borrowing capacity. This is because variable income is less predictable.</li>
-  <li><strong>Documentation:</strong> Be prepared to provide documentation to support your income claims. This could include payslips, bank statements, or tax returns, depending on your employment situation.</li>
-</ul>
+- **Stable and Consistent Income:** Lenders prefer stable and predictable income sources, such as a regular salary. This type of income provides a reliable foundation for assessing your repayment capacity.
+- **Variable Income:** If you have variable income (e.g., part-time work, shift work, bonuses, or self-employment income), lenders may apply a "haircut" – meaning they might only consider a portion of that income when calculating your borrowing capacity. This is because variable income is less predictable.
+- **Documentation:** Be prepared to provide documentation to support your income claims. This could include payslips, bank statements, or tax returns, depending on your employment situation.
 
-<hr />
+---
 
-<h2>Expenses: Needs vs. Wants</h2>
+## Expenses: Needs vs. Wants
 
-<p>Lenders scrutinize your expenses to determine how much of your income is truly discretionary.</p>
+Lenders scrutinize your expenses to determine how much of your income is truly discretionary.
 
-<ul>
-  <li><strong>Discretionary vs. Non-Discretionary:</strong> Non-discretionary expenses are essential living costs like rent, utilities, groceries, and transport. These are always factored into the affordability calculation. Discretionary expenses, such as entertainment, dining out, and hobbies, may be partially or fully excluded, as these are considered adjustable.</li>
-  <li><strong>Existing Financial Commitments:</strong> Your existing debt obligations (e.g., personal loans, car loans, other credit cards) are treated as non-discretionary expenses. These repayments reduce your available funds for new borrowing.</li>
-  <li><strong>The Credit Card Conundrum:</strong> Credit cards can be a double-edged sword when it comes to borrowing capacity. Lenders typically assume you'll use a portion of your available credit limit, even if you don't currently have a balance. This can significantly impact your borrowing power. For example, if you have a credit card with a $10,000 limit, the lender might assume a monthly liability of 3% of that limit ($300), even if you're not actively using the card.</li>
-</ul>
+- **Discretionary vs. Non-Discretionary:** Non-discretionary expenses are essential living costs like rent, utilities, groceries, and transport. These are always factored into the affordability calculation. Discretionary expenses, such as entertainment, dining out, and hobbies, may be partially or fully excluded, as these are considered adjustable.
+- **Existing Financial Commitments:** Your existing debt obligations (e.g., personal loans, car loans, other credit cards) are treated as non-discretionary expenses. These repayments reduce your available funds for new borrowing.
+- **The Credit Card Conundrum:** Credit cards can be a double-edged sword when it comes to borrowing capacity. Lenders typically assume you'll use a portion of your available credit limit, even if you don't currently have a balance. This can significantly impact your borrowing power. For example, if you have a credit card with a $10,000 limit, the lender might assume a monthly liability of 3% of that limit ($300), even if you're not actively using the card.
 
-<hr />
+---
 
-<h2>Beyond the Basics: Lender Overlays and Stress Tests</h2>
+## Beyond the Basics: Lender Overlays and Stress Tests
 
-<p>While the income-expense equation forms the foundation, lenders often apply additional "overlays" or stress tests to assess your ability to withstand financial shocks.</p>
+While the income-expense equation forms the foundation, lenders often apply additional "overlays" or stress tests to assess your ability to withstand financial shocks.
 
-<ul>
-  <li><strong>Interest Rate Stress Tests:</strong> A common stress test involves assessing your repayment capacity if interest rates were to rise. This is particularly relevant for mortgages, where even a small interest rate increase can significantly impact repayments.</li>
-  <li><strong>Credit Risk Factors:</strong> Lenders also consider your credit history and credit score. A poor credit history or a high level of existing debt can reduce your borrowing capacity.</li>
-</ul>
+- **Interest Rate Stress Tests:** A common stress test involves assessing your repayment capacity if interest rates were to rise. This is particularly relevant for mortgages, where even a small interest rate increase can significantly impact repayments.
+- **Credit Risk Factors:** Lenders also consider your credit history and credit score. A poor credit history or a high level of existing debt can reduce your borrowing capacity.
 
-<hr />
+---
 
-<h2>Maximizing Your Borrowing Power</h2>
+## Maximizing Your Borrowing Power
 
-<p>While the complexities of borrowing capacity calculations can seem daunting, there are several things you can do to improve your chances of getting approved for the loan amount you need:</p>
+While the complexities of borrowing capacity calculations can seem daunting, there are several things you can do to improve your chances of getting approved for the loan amount you need:
 
-<ul>
-  <li><strong>Reduce Expenses:</strong> Identify and reduce unnecessary discretionary spending. This will increase your available funds for loan repayments.</li>
-  <li><strong>Pay Down Existing Debt:</strong> Prioritize paying down existing loans and credit card balances. This improves your debt-to-income ratio and demonstrates responsible financial management.</li>
-  <li><strong>Build a Strong Credit History:</strong> Pay your bills on time, avoid applying for too much credit at once, and maintain a healthy credit mix.</li>
-  <li><strong>Accurate Information:</strong> When applying for a loan, provide accurate and complete information about your income, expenses, and debts.</li>
-  <li><strong>Seek Professional Advice:</strong> A financial advisor or mortgage broker can help you understand your borrowing capacity and guide you through the loan application process.</li>
-</ul>
+- **Reduce Expenses:** Identify and reduce unnecessary discretionary spending. This will increase your available funds for loan repayments.
+- **Pay Down Existing Debt:** Prioritize paying down existing loans and credit card balances. This improves your debt-to-income ratio and demonstrates responsible financial management.
+- **Build a Strong Credit History:** Pay your bills on time, avoid applying for too much credit at once, and maintain a healthy credit mix.
+- **Accurate Information:** When applying for a loan, provide accurate and complete information about your income, expenses, and debts.
+- **Seek Professional Advice:** A financial advisor or mortgage broker can help you understand your borrowing capacity and guide you through the loan application process.
 
-<hr />
+---
 
-<h2>Understanding the Nuances</h2>
+## Understanding the Nuances
 
-<p>Borrowing capacity is not just a simple calculation; it's a multifaceted assessment that considers various factors. By understanding the key principles, regulatory guidelines, and lender practices, you can take control of your financial situation and maximize your borrowing potential. Remember, responsible financial management and a healthy credit history are crucial for securing the loan you need.</p>`
+Borrowing capacity is not just a simple calculation; it's a multifaceted assessment that considers various factors. By understanding the key principles, regulatory guidelines, and lender practices, you can take control of your financial situation and maximize your borrowing potential. Remember, responsible financial management and a healthy credit history are crucial for securing the loan you need.
+`
   },
   {
     id: 3,
@@ -186,7 +182,69 @@ Understanding these lesser-known reasons for credit rejections can help you bett
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Learn about Kultivo's approach to creating a more equitable and intelligent lending system for all Australians.",
-    content: "<p>At Kultivo, we believe that access to fair and affordable credit is essential for financial wellbeing. That's why we're committed to revolutionizing the borrowing process to make it more equitable, transparent, and accessible for everyone.</p><h2>Beyond Traditional Credit Scores</h2><p>Traditional credit scoring systems often fail to capture the full picture of a person's financial responsibility. Many people who would make reliable borrowers are excluded simply because they lack extensive credit histories.</p><p>Our approach incorporates a wider range of factors that can demonstrate financial responsibility, giving more people the opportunity to access the credit they deserve.</p><h2>How We're Different</h2><p>Our lending platform incorporates several innovative approaches:</p><ul><li><strong>Comprehensive assessment</strong> - We look beyond just credit scores to get a holistic view of your financial situation</li><li><strong>Education-first approach</strong> - We provide resources to help you understand and improve your financial position</li><li><strong>Personalized recommendations</strong> - Our system matches you with lending options that truly fit your circumstances</li><li><strong>Ongoing support</strong> - We don't disappear after approval; we're here to help throughout your financial journey</li></ul><h2>Technology with a Human Touch</h2><p>While we leverage advanced technology to make better lending decisions, we never forget the human element. Our team of financial experts reviews edge cases and provides personalized guidance when needed.</p><p>This combination of cutting-edge technology and human expertise allows us to make lending decisions that are both data-driven and fair.</p><h2>Join the Financial Revolution</h2><p>We're building a community of financially empowered individuals who believe in a fairer lending system. By joining Kultivo, you're not just accessing better loan options—you're becoming part of a movement to transform how borrowing works for everyone.</p><p>Together, we can create a financial system that works for all Australians, not just those with perfect credit histories.</p>"
+    content: "import { marked } from "marked";
+
+const markdownContent1 = `
+# Understanding the Debt-to-Income Ratio
+The **debt-to-income (DTI) ratio** is one of the most critical factors lenders use to assess your borrowing capacity.
+
+## What is DTI?
+Your DTI ratio is calculated as:
+
+> **(Total Monthly Debt Payments ÷ Gross Monthly Income) × 100%**
+
+Lenders use this metric to determine whether you're taking on more debt than you can manage.
+
+## Why DTI Matters for Borrowing
+A high DTI signals financial risk, potentially leading to **loan rejection** or **higher interest rates**. In Australia, lenders generally prefer a DTI below **6**.
+
+## Ways to Improve Your DTI
+- Pay down existing debts before applying for a loan.
+- Increase your income through side gigs or career advancement.
+- Avoid taking on new debt while applying for a loan.
+`;
+
+const markdownContent2 = `
+# Should You Refinance Your Loan?
+Refinancing can be a smart move, but it's not always the right choice. Here's how to decide:
+
+## When to Refinance
+- Interest rates have dropped significantly.
+- Your credit score has improved.
+- You need a lower monthly payment.
+
+## When NOT to Refinance
+- You plan to move soon.
+- Refinancing fees outweigh savings.
+- You're already close to paying off the loan.
+
+## How to Refinance the Right Way
+1. **Compare lenders** for the best rate.
+2. **Check your credit score** before applying.
+3. **Understand fees**—refinancing isn't free!
+`;
+
+blogPosts.push(
+  {
+    id: 5,
+    slug: "understanding-debt-to-income-ratio",
+    title: "Understanding the Debt-to-Income Ratio",
+    type: "Article",
+    imageUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "Learn how the debt-to-income ratio affects your borrowing capacity and how to improve it.",
+    content: marked(markdownContent1)
+  },
+  {
+    id: 6,
+    slug: "should-you-refinance-your-loan",
+    title: "Should You Refinance Your Loan?",
+    type: "Article",
+    imageUrl: "https://images.unsplash.com/photo-1593370412447-6829a2ff7254?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "Refinancing can save you money, but it isn't always the best choice. Here's how to decide if it's right for you.",
+    content: marked(markdownContent2)
+  }
+);
+"
   },
   {
     id: 5,
@@ -195,7 +253,111 @@ Understanding these lesser-known reasons for credit rejections can help you bett
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "An in-depth guide to understanding how interest rates work and how they impact your borrowing decisions.",
-    content: "<p>Interest rates are a fundamental concept in borrowing and investing, yet many people don't fully understand how they work or their significant impact on financial decisions.</p><p>Whether you're taking out a mortgage, applying for a personal loan, or saving for the future, understanding interest rates is crucial to making informed financial choices.</p><h2>What Are Interest Rates?</h2><p>At its core, an interest rate is the cost of borrowing money or the reward for saving it. When you borrow, the interest rate determines how much extra you'll pay beyond the original amount (principal). When you save, it determines how much your money will grow over time.</p><p>Interest rates are typically expressed as an annual percentage, though they may be calculated and applied more frequently (monthly, daily, etc.).</p><h2>Types of Interest Rates</h2><p>There are several important distinctions to understand:</p><ul><li><strong>Fixed vs. Variable Rates</strong> - Fixed rates remain constant throughout the loan term, while variable rates can fluctuate based on market conditions</li><li><strong>Nominal vs. Effective Rates</strong> - The nominal rate is the stated rate, while the effective rate accounts for compounding and gives a more accurate picture of what you'll actually pay</li><li><strong>Comparison Rate</strong> - In Australia, lenders must provide a comparison rate that includes most fees and charges, giving a more complete view of the cost</li></ul><h2>Factors That Influence Interest Rates</h2><p>Interest rates aren't set arbitrarily. They're influenced by various factors:</p><ol><li>Reserve Bank of Australia (RBA) cash rate decisions</li><li>Inflation levels and expectations</li><li>Economic growth and employment data</li><li>Competition among lenders</li><li>Your personal risk profile as a borrower</li></ol><h2>How Interest Rates Affect Your Financial Decisions</h2><p>Understanding interest rates helps you make better decisions about:</p><ul><li>When to borrow or invest</li><li>Which loan products to choose</li><li>Whether to refinance existing loans</li><li>How to structure your debt repayments</li><li>Where to keep your savings</li></ul><p>By developing a solid grasp of how interest rates work, you'll be better equipped to navigate your financial journey and make choices that align with your long-term goals.</p>"
+    content: "# Understanding Interest Rates and Borrowing Costs: What You Need to Know
+
+**Excerpt:**  
+When you borrow money—whether through a personal loan, credit card, or mortgage—the interest rates and fees play a major role in determining the total cost. This guide breaks down how interest rates work, what fees to watch out for, and how to minimize borrowing costs.
+
+---
+
+## 1. Understanding Interest Rates: The Basics
+
+An interest rate is the cost of borrowing money, expressed as a percentage. It’s typically presented as an Annual Percentage Rate (APR), which reflects the yearly cost of borrowing.
+
+For example:
+- **Loan**: $1,000 at 12% interest per year = $120 annual interest.
+- **Monthly rate**: 1% (12% ÷ 12 months).
+- **One-month interest**: $10 (1% of $1,000).
+
+Understanding how interest works can help you make informed borrowing decisions.
+
+---
+
+## 2. Different Types of Borrowing Costs
+
+Borrowing costs vary depending on the loan type. Some loans focus more on fees, while others charge both interest and fees.
+
+### A. Short-Term Loans and Fee-Based Borrowing
+Short-term loans (e.g., payday loans) charge high fees:
+- **20% establishment fee** (e.g., borrowing $1,000 = $200 upfront).
+- **4% monthly maintenance fee** (e.g., with a $1,000 balance, you pay $40/month).
+
+These loans can get expensive quickly, especially if you borrow frequently.
+
+### B. Personal Loans and Interest-Based Borrowing
+Personal loans typically have both interest rates and fees:
+- **Example**: $20,000 loan with a 15% interest rate = $3,000 annual interest if unpaid.
+
+### C. Credit Cards and Revolving Credit
+Credit cards have higher interest rates (15-25%), but if you pay in full each month, there’s no interest. However, if you carry a balance, you’ll incur high-interest charges.
+
+For example:
+- Borrow $2,000 at 20% interest, repay in 6 months = $200 interest.
+- Repay in full within the month = no interest.
+
+Credit cards also charge annual and cash advance fees.
+
+---
+
+## 3. How Loan Term Affects the Total Cost of Borrowing
+
+The loan term significantly impacts the total borrowing cost—longer terms mean more interest, even if the interest rate is low.
+
+**Example 1: Home Loans**
+- **Loan**: $500,000 mortgage at 6% interest = $30,000 annual interest.
+- Over 30 years, you might pay over $500,000 in interest.
+
+**Example 2: Credit Cards**
+- High interest rates (e.g., 20%) on short-term loans (e.g., $2,000 for 2 months) might cost just $67 in interest.
+
+---
+
+## 4. Comparing Different Borrowing Products
+
+Here’s a quick comparison of borrowing costs for various products:
+
+| Loan Type      | Amount Borrowed | Interest Rate / Fees   | Loan Term | Total Cost       |
+|----------------|-----------------|------------------------|-----------|------------------|
+| Short-Term Loan| $1,000          | 20% setup + 4% monthly | 3 months  | ~$320            |
+| Personal Loan  | $20,000         | 12% per year + $500 fee| 5 years   | ~$26,000         |
+| Credit Card    | $1,000          | 20% per year           | 3 months  | ~$50             |
+| Mortgage       | $500,000        | 6% per year            | 30 years  | ~$1,000,000      |
+
+---
+
+## 5. How to Reduce Borrowing Costs
+
+To minimize borrowing costs, consider these strategies:
+
+### A. Choose the Right Loan Type
+- Use credit cards for short-term borrowing and pay in full each month.
+- For large purchases, choose a personal loan over a credit card.
+- Consider a home loan with an offset account to reduce interest.
+
+### B. Pay Off Loans Faster
+- Extra repayments can reduce interest costs significantly.
+- Even an extra $100/month on a mortgage can save tens of thousands in interest.
+
+### C. Be Aware of Fees
+- Check for hidden fees, such as early repayment penalties.
+- Compare loans for lower setup fees.
+
+### D. Avoid Multiple Short-Term Loans
+- Repeated borrowing, especially payday loans, can be costly.
+- Consider a low-interest credit card or personal loan for regular short-term borrowing.
+
+---
+
+## Final Thoughts: The Importance of Understanding Borrowing Costs
+
+Understanding interest rates and fees is essential to avoid excessive borrowing costs. Key takeaways:
+- Always calculate the total cost of credit before borrowing.
+- Loan term matters—longer loans can cost more.
+- Compare loan products for the most cost-effective option.
+- Pay off debt as quickly as possible to reduce interest charges.
+
+By staying informed, you can make smarter borrowing decisions and manage your debt responsibly.
+"
   }
 ];
 

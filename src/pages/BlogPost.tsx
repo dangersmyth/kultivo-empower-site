@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
@@ -8,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getBlogPostBySlug } from "@/data/blogPosts";
 import QuizLanding from "@/components/QuizLanding";
+import { marked } from "marked"; // Ensure marked is imported
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -80,7 +80,7 @@ const BlogPost = () => {
               {post.type === "Quiz" ? (
                 <QuizLanding />
               ) : post.content ? (
-                <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                <div dangerouslySetInnerHTML={{ __html: marked(post.content) }} />
               ) : (
                 <div className="bg-gray-50 p-8 rounded-lg text-center">
                   <p className="text-lg text-muted-foreground">

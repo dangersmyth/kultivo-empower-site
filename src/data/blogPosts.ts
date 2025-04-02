@@ -382,3 +382,19 @@ By staying informed, you can make smarter borrowing decisions and manage your de
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
   return blogPosts.find(post => post.slug === slug);
 };
+
+// Convert markdown content to HTML
+
+const htmlContent2 = marked(markdownContent2);
+const htmlContent3 = marked(markdownContent3);
+const htmlContent4 = marked(markdownContent4);
+const htmlContent5 = marked(markdownContent5);
+
+// Convert each markdown content to HTML
+const htmlContents = markdownContents.map(content => marked(content));
+
+// Now you can use htmlContent1, htmlContent2, etc.
+console.log(htmlContent2);
+console.log(htmlContent3);
+console.log(htmlContent4);
+console.log(htmlContent5);

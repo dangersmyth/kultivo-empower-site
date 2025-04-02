@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getBlogPostBySlug } from "@/data/blogPosts";
+import QuizLanding from "@/components/QuizLanding";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -76,14 +77,14 @@ const BlogPost = () => {
             </div>
             
             <div className="prose max-w-none">
-              {post.content ? (
+              {post.type === "Quiz" ? (
+                <QuizLanding />
+              ) : post.content ? (
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               ) : (
                 <div className="bg-gray-50 p-8 rounded-lg text-center">
                   <p className="text-lg text-muted-foreground">
-                    {post.type === "Quiz" 
-                      ? "Quiz content coming soon! Check back later to test your knowledge." 
-                      : "Full article coming soon! Check back later for the complete content."}
+                    Full article coming soon! Check back later for the complete content.
                   </p>
                 </div>
               )}

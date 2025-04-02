@@ -1,4 +1,3 @@
-
 export interface BlogPost {
   id: number;
   slug: string;
@@ -103,7 +102,93 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Discover the unexpected factors that could be affecting your loan applications and how to address them.",
-    content: "<p>When it comes to loan applications, there are many well-known factors that can lead to rejection, such as poor credit history or insufficient income. However, there are also several surprising reasons that might cause lenders to decline your application.</p><p>Understanding these lesser-known factors can help you better prepare for your next loan application and increase your chances of approval.</p><h2>Unexpected Factors That Can Affect Your Loan Application</h2><ol><li><strong>Frequent job changes</strong> - Even with a good income, changing jobs too frequently can signal instability to lenders.</li><li><strong>Multiple credit inquiries</strong> - Several loan applications in a short period can make you appear financially desperate.</li><li><strong>Mistakes on your application</strong> - Simple errors or inconsistencies can trigger automatic rejections.</li><li><strong>Your spending patterns</strong> - Regular gambling transactions or lavish spending might raise red flags.</li><li><strong>Address instability</strong> - Moving too frequently can be seen as a risk factor.</li></ol><h2>Digital Footprints Matter</h2><p>In today's digital age, some lenders are beginning to consider alternative data sources. Your online behavior, social media presence, and even the device you use to apply can sometimes factor into lending decisions.</p><p>While not all lenders use these methods, being aware of your digital footprint is increasingly important in the financial world.</p><h2>How to Address These Issues</h2><p>If you've been declined for a loan, don't panic. There are several steps you can take:</p><ul><li>Request detailed feedback from the lender about why you were declined</li><li>Check your credit report for errors or unexpected issues</li><li>Wait at least 3-6 months before applying again</li><li>Consider working with a financial advisor to improve your application</li></ul><p>By understanding these surprising factors and taking proactive steps to address them, you can significantly improve your chances of loan approval in the future.</p>"
+    content: `<h1>Surprising Reasons Why People Are Declined for Credit in Australia</h1>
+
+<p class="lead">While a good credit history and stable income are often key to securing credit, there are many surprising reasons why people are declined. This post explores some of these unexpected factors and provides tips on how to avoid them.</p>
+
+<hr />
+
+<h2>1. You Have Significant Assets but No Income</h2>
+
+<p>It might seem logical that someone with substantial savings or property should easily qualify for credit. However, if you don't have a regular income, lenders will likely reject your application. Responsible lending laws require lenders to ensure you can afford repayments based on ongoing income, not just assets.</p>
+
+<p><strong>How to Avoid This Issue:</strong></p>
+<ul>
+  <li>Apply for a credit card while still employed if you're nearing retirement.</li>
+  <li>Explore credit options for retirees, such as secured loans.</li>
+  <li>Demonstrate alternative income sources, like rental income or dividends.</li>
+</ul>
+
+<hr />
+
+<h2>2. You're Self-Employed</h2>
+
+<p>Self-employment can make securing credit harder, even with a high income. Lenders often prefer salaried employees because their income is predictable. For self-employed individuals, proving income stability may require additional documentation, such as tax returns and financial statements.</p>
+
+<p><strong>How to Improve Your Chances:</strong></p>
+<ul>
+  <li>Maintain detailed financial records, including tax returns and profit/loss statements.</li>
+  <li>Work with lenders that specialize in self-employed borrowers.</li>
+  <li>Apply for credit products where you have an existing banking relationship.</li>
+</ul>
+
+<hr />
+
+<h2>3. Unfavorable Bank Statement Activity</h2>
+
+<p>Lenders look at your bank statements to assess your financial behavior. Gambling, for example, may not affect your ability to repay debt but can still raise red flags for lenders, who associate it with financial instability.</p>
+
+<p><strong>What You Can Do:</strong></p>
+<ul>
+  <li>Avoid gambling transactions on your main bank account.</li>
+  <li>Consider using a separate account for gambling if it's a hobby.</li>
+  <li>Regularly monitor your bank statements to ensure responsible spending.</li>
+</ul>
+
+<hr />
+
+<h2>4. High Expenses Relative to Income</h2>
+
+<p>Lenders evaluate both your income and expenses. If your expenses are too high relative to your income, lenders may conclude that you can't afford additional debt.</p>
+
+<p><strong>How to Manage This Factor:</strong></p>
+<ul>
+  <li>Review your spending before applying for credit and reduce unnecessary expenses.</li>
+  <li>Be accurate when reporting expenses—don't overstate them.</li>
+  <li>Consider consolidating debt to lower monthly obligations.</li>
+</ul>
+
+<hr />
+
+<h2>5. Too Many Credit Applications in a Short Period</h2>
+
+<p>Applying for multiple credit products in a short time can harm your credit score. Each application leads to an inquiry on your credit report, and multiple inquiries can suggest financial distress to lenders.</p>
+
+<p><strong>Tips to Avoid This Issue:</strong></p>
+<ul>
+  <li>Use online eligibility checkers before applying to see your likelihood of approval.</li>
+  <li>Space out credit applications over time.</li>
+  <li>Apply for credit products that best suit your financial profile.</li>
+</ul>
+
+<hr />
+
+<h2>6. Changes in Lending Policies or Credit Laws</h2>
+
+<p>Changes in lending policies or regulatory requirements (e.g., by the Australian Prudential Regulation Authority) can impact your ability to get approved for credit. Economic conditions and interest rate hikes may also lead to stricter lending criteria.</p>
+
+<p><strong>How to Stay Informed:</strong></p>
+<ul>
+  <li>Keep up to date with changes in lending regulations.</li>
+  <li>Consult with a mortgage broker or financial advisor if unsure about eligibility.</li>
+  <li>Regularly check your credit report to ensure it accurately reflects your financial situation.</li>
+</ul>
+
+<hr />
+
+<h2>Final Thoughts</h2>
+
+<p>Understanding these lesser-known reasons for credit rejections can help you better manage your financial profile. By planning ahead, managing your expenses, and applying strategically, you can improve your chances of securing credit when you need it most. Awareness is key—knowing how lenders assess risk allows you to navigate the credit system more effectively and avoid unnecessary declines.</p>`
   },
   {
     id: 4,

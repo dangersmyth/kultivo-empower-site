@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogPostCard from "@/components/BlogPostCard";
 import { blogPosts } from "@/data/blogPosts";
+import { marked } from "marked"; // Import marked to convert markdown to HTML
 
 const Blog = () => {
   // Add a simple fade-in animation effect when the page loads
@@ -27,9 +28,19 @@ const Blog = () => {
             Stay updated with the latest financial tips, insights, and strategies to help you make better financial decisions.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {blogPosts.map((post) => (
-              <BlogPostCard key={post.slug} post={post} />
+              <div key={post.slug}>
+                {/* Here, we use marked to render markdown content as HTML */}
+                {post.content && (
+                  <div 
+                    className="blog-post-content"
+                    dangerouslySetInnerHTML={{ __html: marked(post.content) }} // Render the content as HTML
+                  />
+                )}
+                {/* Optionally render a card with other details */}
+                <BlogPostCard post={post} />
+              </div>
             ))}
           </div>
         </div>

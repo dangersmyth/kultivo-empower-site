@@ -1,3 +1,7 @@
+// Import marked library at the top
+import { marked } from 'marked';
+
+
 export interface BlogPost {
   id: number;
   slug: string;
@@ -8,7 +12,6 @@ export interface BlogPost {
   content?: string;
 }
 
-import { marked } from "marked";
 
 export const blogPosts: BlogPost[] = [
   {
@@ -26,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.",
-    content: markdownContent2, // Referencing the content defined below
+    content: marked(markdownContent2), // Referencing the content defined below
   },
   {
     id: 3,
@@ -35,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Discover the unexpected factors that could be affecting your loan applications and how to address them.",
-    content: markdownContent3, // Referencing the content defined below
+    content: marked(markdownContent3), // Referencing the content defined below
   },
   {
     id: 4,
@@ -44,7 +47,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Learn about Kultivo's approach to creating a more equitable and intelligent lending system for all Australians.",
-    content: markdownContent4, // Referencing the content defined below
+    content: marked(markdownContent4), // Referencing the content defined below
 
   },
   {
@@ -54,7 +57,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "An in-depth guide to understanding how interest rates work and how they impact your borrowing decisions.",
-    content: markdownContent5, // Referencing the content defined below
+    content: marked(markdownContent5), // Referencing the content defined below
     
 
   }
@@ -62,7 +65,7 @@ export const blogPosts: BlogPost[] = [
 
 // This section stores the markdown or textual content for each blog
 const markdownContent2 =
-`# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
+# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
 
 **Excerpt:**  
 Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.
@@ -125,7 +128,7 @@ While the complexities of borrowing capacity calculations can seem daunting, the
 ## Understanding the Nuances
 
 Borrowing capacity is not just a simple calculation; it's a multifaceted assessment that considers various factors. By understanding the key principles, regulatory guidelines, and lender practices, you can take control of your financial situation and maximize your borrowing potential. Remember, responsible financial management and a healthy credit history are crucial for securing the loan you need.
-`
+
 
 
 
@@ -134,12 +137,12 @@ Borrowing capacity is not just a simple calculation; it's a multifaceted assessm
 
 ## Final Thoughts
 
-Understanding these lesser-known reasons for credit rejections can help you better manage your financial profile. By planning ahead, managing your expenses, and applying strategically, you can improve your chances of securing credit when you need it most. Awareness is key—knowing how lenders assess risk allows you to navigate the credit system more effectively and avoid unnecessary declines.`
+Understanding these lesser-known reasons for credit rejections can help you better manage your financial profile. By planning ahead, managing your expenses, and applying strategically, you can improve your chances of securing credit when you need it most. Awareness is key—knowing how lenders assess risk allows you to navigate the credit system more effectively and avoid unnecessary declines.
 
   ;
 
 const markdownContent3 =
-`# Surprising Reasons Why People Are Declined for Credit in Australia
+# Surprising Reasons Why People Are Declined for Credit in Australia
 
 **Excerpt:**  
 While a good credit history and stable income are often key to securing credit, there are many surprising reasons why people are declined. This post explores some of these unexpected factors and provides tips on how to avoid them.
@@ -379,3 +382,19 @@ By staying informed, you can make smarter borrowing decisions and manage your de
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
   return blogPosts.find(post => post.slug === slug);
 };
+
+// Convert markdown content to HTML
+
+const htmlContent2 = marked(markdownContent2);
+const htmlContent3 = marked(markdownContent3);
+const htmlContent4 = marked(markdownContent4);
+const htmlContent5 = marked(markdownContent5);
+
+// Convert each markdown content to HTML
+const htmlContents = markdownContents.map(content => marked(content));
+
+// Now you can use htmlContent1, htmlContent2, etc.
+console.log(htmlContent2);
+console.log(htmlContent3);
+console.log(htmlContent4);
+console.log(htmlContent5);

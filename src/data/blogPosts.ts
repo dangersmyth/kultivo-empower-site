@@ -13,56 +13,6 @@ export interface BlogPost {
 }
 
 
-export const blogPosts: BlogPost[] = [
-  {
-    id: 1,
-    slug: "how-conscientious-are-you-and-why-it-matters-for-borrowing",
-    title: "How conscientious are you? And why it matters for borrowing",
-    type: "Quiz",
-    imageUrl: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "Take our quiz to discover how your conscientiousness affects your borrowing opportunities and financial health."
-  },
-  {
-    id: 2,
-    slug: "demystifying-borrowing-capacity",
-    title: "Demystifying borrowing capacity",
-    type: "Article",
-    imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.",
-    content: marked(markdownContent2), // Referencing the content defined below
-  },
-  {
-    id: 3,
-    slug: "surprising-reasons-you-could-be-declined-for-a-loan",
-    title: "Surprising reasons you could be declined for a loan",
-    type: "Article",
-    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "Discover the unexpected factors that could be affecting your loan applications and how to address them.",
-    content: marked(markdownContent3), // Referencing the content defined below
-  },
-  {
-    id: 4,
-    slug: "how-were-making-borrowing-smarter-and-fairer",
-    title: "How We're Making Borrowing Smarter and Fairer",
-    type: "Article",
-    imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "Learn about Kultivo's approach to creating a more equitable and intelligent lending system for all Australians.",
-    content: marked(markdownContent4), // Referencing the content defined below
-
-  },
-  {
-    id: 5,
-    slug: "understanding-interest-rates-what-you-need-to-know",
-    title: "Understanding Interest Rates: What You Need to Know",
-    type: "Article",
-    imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "An in-depth guide to understanding how interest rates work and how they impact your borrowing decisions.",
-    content: marked(markdownContent5), // Referencing the content defined below
-    
-
-  }
-];
-
 // This section stores the markdown or textual content for each blog
 const markdownContent2 =
 "# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
@@ -378,6 +328,58 @@ Understanding interest rates and fees is essential to avoid excessive borrowing 
 By staying informed, you can make smarter borrowing decisions and manage your debt responsibly.
 "
 ;
+}
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: 1,
+    slug: "how-conscientious-are-you-and-why-it-matters-for-borrowing",
+    title: "How conscientious are you? And why it matters for borrowing",
+    type: "Quiz",
+    imageUrl: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "Take our quiz to discover how your conscientiousness affects your borrowing opportunities and financial health."
+  },
+  {
+    id: 2,
+    slug: "demystifying-borrowing-capacity",
+    title: "Demystifying borrowing capacity",
+    type: "Article",
+    imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.",
+    content: marked(markdownContent2), // Referencing the content defined above
+  },
+  {
+    id: 3,
+    slug: "surprising-reasons-you-could-be-declined-for-a-loan",
+    title: "Surprising reasons you could be declined for a loan",
+    type: "Article",
+    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "Discover the unexpected factors that could be affecting your loan applications and how to address them.",
+    content: marked(markdownContent3), // Referencing the content defined above
+  },
+  {
+    id: 4,
+    slug: "how-were-making-borrowing-smarter-and-fairer",
+    title: "How We're Making Borrowing Smarter and Fairer",
+    type: "Article",
+    imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "Learn about Kultivo's approach to creating a more equitable and intelligent lending system for all Australians.",
+    content: marked(markdownContent4), // Referencing the content defined above
+
+  },
+  {
+    id: 5,
+    slug: "understanding-interest-rates-what-you-need-to-know",
+    title: "Understanding Interest Rates: What You Need to Know",
+    type: "Article",
+    imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "An in-depth guide to understanding how interest rates work and how they impact your borrowing decisions.",
+    content: marked(markdownContent5), // Referencing the content defined above
+    
+
+  }
+];
+
   
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
   return blogPosts.find(post => post.slug === slug);

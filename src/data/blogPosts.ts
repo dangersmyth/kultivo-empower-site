@@ -26,7 +26,43 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.",
-    content: `# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
+    content: markdownContent2, // Referencing the content defined below
+  },
+  {
+    id: 3,
+    slug: "surprising-reasons-you-could-be-declined-for-a-loan",
+    title: "Surprising reasons you could be declined for a loan",
+    type: "Article",
+    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "Discover the unexpected factors that could be affecting your loan applications and how to address them.",
+    content: markdownContent3, // Referencing the content defined below
+  },
+  {
+    id: 4,
+    slug: "how-were-making-borrowing-smarter-and-fairer",
+    title: "How We're Making Borrowing Smarter and Fairer",
+    type: "Article",
+    imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "Learn about Kultivo's approach to creating a more equitable and intelligent lending system for all Australians.",
+    content: markdownContent4, // Referencing the content defined below
+
+  },
+  {
+    id: 5,
+    slug: "understanding-interest-rates-what-you-need-to-know",
+    title: "Understanding Interest Rates: What You Need to Know",
+    type: "Article",
+    imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    excerpt: "An in-depth guide to understanding how interest rates work and how they impact your borrowing decisions.",
+    content: markdownContent5, // Referencing the content defined below
+    
+
+  }
+];
+
+// This section stores the markdown or textual content for each blog
+const markdownContent2 =
+`# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
 
 **Excerpt:**  
 Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.
@@ -90,15 +126,20 @@ While the complexities of borrowing capacity calculations can seem daunting, the
 
 Borrowing capacity is not just a simple calculation; it's a multifaceted assessment that considers various factors. By understanding the key principles, regulatory guidelines, and lender practices, you can take control of your financial situation and maximize your borrowing potential. Remember, responsible financial management and a healthy credit history are crucial for securing the loan you need.
 `
-  },
-  {
-    id: 3,
-    slug: "surprising-reasons-you-could-be-declined-for-a-loan",
-    title: "Surprising reasons you could be declined for a loan",
-    type: "Article",
-    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "Discover the unexpected factors that could be affecting your loan applications and how to address them.",
-    content: `# Surprising Reasons Why People Are Declined for Credit in Australia
+
+
+
+
+---
+
+## Final Thoughts
+
+Understanding these lesser-known reasons for credit rejections can help you better manage your financial profile. By planning ahead, managing your expenses, and applying strategically, you can improve your chances of securing credit when you need it most. Awareness is key—knowing how lenders assess risk allows you to navigate the credit system more effectively and avoid unnecessary declines.`
+
+  ;
+
+const markdownContent3 =
+`# Surprising Reasons Why People Are Declined for Credit in Australia
 
 **Excerpt:**  
 While a good credit history and stable income are often key to securing credit, there are many surprising reasons why people are declined. This post explores some of these unexpected factors and provides tips on how to avoid them.
@@ -168,92 +209,67 @@ Changes in lending policies or regulatory requirements (e.g., by the Australian 
 - Keep up to date with changes in lending regulations.
 - Consult with a mortgage broker or financial advisor if unsure about eligibility.
 - Regularly check your credit report to ensure it accurately reflects your financial situation.
+;
 
----
+const markdownContent4 =
+# Why Are We Here?
 
-## Final Thoughts
+**Excerpt:** Welcome to our blog! We provide insights on lending in Australia, covering loan types, borrowing costs, and credit improvement tips.
 
-Understanding these lesser-known reasons for credit rejections can help you better manage your financial profile. By planning ahead, managing your expenses, and applying strategically, you can improve your chances of securing credit when you need it most. Awareness is key—knowing how lenders assess risk allows you to navigate the credit system more effectively and avoid unnecessary declines.`
-  },
-  {
-    id: 4,
-    slug: "how-were-making-borrowing-smarter-and-fairer",
-    title: "How We're Making Borrowing Smarter and Fairer",
-    type: "Article",
-    imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "Learn about Kultivo's approach to creating a more equitable and intelligent lending system for all Australians.",
-    content: "import { marked } from "marked";
+## The Different Types of Loans Available in Australia
 
-const markdownContent1 = `
-# Understanding the Debt-to-Income Ratio
-The **debt-to-income (DTI) ratio** is one of the most critical factors lenders use to assess your borrowing capacity.
+There are many different types of loans available in Australia. The most common include:
 
-## What is DTI?
-Your DTI ratio is calculated as:
+- **Personal loans**: Unsecured loans for various purposes such as debt consolidation, home improvement, or car repairs.
+- **Car loans**: Secured loans for purchasing a car, where the vehicle serves as collateral.
+- **Home loans**: Secured loans for purchasing a home, with the property serving as collateral.
+- **Credit cards**: A form of revolving credit allowing purchases and cash withdrawals up to a set limit.
+- **Short-term loans**: Also known as payday loans, these are small loans repaid within a few weeks or months.
+- **Buy now, pay later (BNPL) services**: Allows purchases to be paid in installments, growing in popularity in Australia.
+- **Earned wage access (EWA)**: Enables access to a portion of earned wages before payday to manage short-term expenses.
 
-> **(Total Monthly Debt Payments ÷ Gross Monthly Income) × 100%**
+## The Lending Process
 
-Lenders use this metric to determine whether you're taking on more debt than you can manage.
+The lending process generally follows these steps:
 
-## Why DTI Matters for Borrowing
-A high DTI signals financial risk, potentially leading to **loan rejection** or **higher interest rates**. In Australia, lenders generally prefer a DTI below **6**.
+1. **Application**: Complete a loan application and provide supporting documentation.
+2. **Assessment**: The lender evaluates your creditworthiness and eligibility.
+3. **Approval**: If eligible, you receive a loan offer.
+4. **Acceptance**: Upon accepting, you sign a loan contract.
+5. **Disbursement**: The loan funds are transferred to you.
+6. **Repayment**: Make regular repayments until the loan is paid off.
 
-## Ways to Improve Your DTI
-- Pay down existing debts before applying for a loan.
-- Increase your income through side gigs or career advancement.
-- Avoid taking on new debt while applying for a loan.
-`;
+## How to Optimize Your Borrowing Costs
 
-const markdownContent2 = `
-# Should You Refinance Your Loan?
-Refinancing can be a smart move, but it's not always the right choice. Here's how to decide:
+To minimize borrowing costs:
 
-## When to Refinance
-- Interest rates have dropped significantly.
-- Your credit score has improved.
-- You need a lower monthly payment.
+- Compare interest rates.
+- Assess fees and charges.
+- Consider a secured loan.
+- Make extra repayments.
+- Pay off your loan early.
 
-## When NOT to Refinance
-- You plan to move soon.
-- Refinancing fees outweigh savings.
-- You're already close to paying off the loan.
+## When to Use Borrowing
 
-## How to Refinance the Right Way
-1. **Compare lenders** for the best rate.
-2. **Check your credit score** before applying.
-3. **Understand fees**—refinancing isn't free!
-`;
+Borrowing should ideally be for asset purchases like property or income-generating activities like education. Otherwise, it should be used in moderation and only when absolutely necessary, as excessive borrowing can lead to financial strain.
 
-blogPosts.push(
-  {
-    id: 5,
-    slug: "understanding-debt-to-income-ratio",
-    title: "Understanding the Debt-to-Income Ratio",
-    type: "Article",
-    imageUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "Learn how the debt-to-income ratio affects your borrowing capacity and how to improve it.",
-    content: marked(markdownContent1)
-  },
-  {
-    id: 6,
-    slug: "should-you-refinance-your-loan",
-    title: "Should You Refinance Your Loan?",
-    type: "Article",
-    imageUrl: "https://images.unsplash.com/photo-1593370412447-6829a2ff7254?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "Refinancing can save you money, but it isn't always the best choice. Here's how to decide if it's right for you.",
-    content: marked(markdownContent2)
-  }
-);
-"
-  },
-  {
-    id: 5,
-    slug: "understanding-interest-rates-what-you-need-to-know",
-    title: "Understanding Interest Rates: What You Need to Know",
-    type: "Article",
-    imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "An in-depth guide to understanding how interest rates work and how they impact your borrowing decisions.",
-    content: "# Understanding Interest Rates and Borrowing Costs: What You Need to Know
+## How to Improve Your Chances of Being Approved for a Loan
+
+To increase your loan approval chances:
+
+- Maintain a good credit score.
+- Ensure a steady income.
+- Keep a low debt-to-income ratio.
+- Have a strong repayment history.
+- Provide accurate information on your application.
+
+We hope you find our blogs helpful!
+
+
+;
+
+const markdownContent5 =
+"# Understanding Interest Rates and Borrowing Costs: What You Need to Know
 
 **Excerpt:**  
 When you borrow money—whether through a personal loan, credit card, or mortgage—the interest rates and fees play a major role in determining the total cost. This guide breaks down how interest rates work, what fees to watch out for, and how to minimize borrowing costs.
@@ -358,9 +374,8 @@ Understanding interest rates and fees is essential to avoid excessive borrowing 
 
 By staying informed, you can make smarter borrowing decisions and manage your debt responsibly.
 "
-  }
-];
-
+;
+  
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
   return blogPosts.find(post => post.slug === slug);
 };

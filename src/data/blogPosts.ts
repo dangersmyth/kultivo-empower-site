@@ -1,5 +1,6 @@
+// Import marked library at the top
+import { marked } from 'marked';
 
-import { marked } from "marked";
 
 export interface BlogPost {
   id: number;

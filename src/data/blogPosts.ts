@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.",
-    content: markdownContent2, // Referencing the content defined below
+    content: marked(markdownContent2), // Referencing the content defined below
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Discover the unexpected factors that could be affecting your loan applications and how to address them.",
-    content: markdownContent3, // Referencing the content defined below
+    content: marked(markdownContent3), // Referencing the content defined below
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Learn about Kultivo's approach to creating a more equitable and intelligent lending system for all Australians.",
-    content: markdownContent4, // Referencing the content defined below
+    content: marked(markdownContent4), // Referencing the content defined below
 
   },
   {
@@ -57,7 +57,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "An in-depth guide to understanding how interest rates work and how they impact your borrowing decisions.",
-    content: markdownContent5, // Referencing the content defined below
+    content: marked(markdownContent5), // Referencing the content defined below
     
 
   }

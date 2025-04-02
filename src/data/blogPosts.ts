@@ -1,3 +1,6 @@
+
+import { marked } from "marked";
+
 export interface BlogPost {
   id: number;
   slug: string;
@@ -8,7 +11,6 @@ export interface BlogPost {
   content?: string;
 }
 
-import { marked } from "marked";
 
 export const blogPosts: BlogPost[] = [
   {

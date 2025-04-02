@@ -24,8 +24,77 @@ export const blogPosts: BlogPost[] = [
     title: "Demystifying borrowing capacity",
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-    excerpt: "Learn what factors influence how much you can borrow and how to improve your borrowing capacity.",
-    content: "<p>Understanding your borrowing capacity is essential when planning your financial future. This article explores the key factors that lenders consider when determining how much you can borrow.</p><p>Your income, existing debts, credit history, and employment stability all play crucial roles in this assessment. We'll guide you through each factor and provide practical tips to help you maximize your borrowing potential.</p><p>From improving your debt-to-income ratio to strengthening your credit score, discover actionable strategies that can make a significant difference in your financial options.</p><h2>Key Factors Affecting Your Borrowing Capacity</h2><p>Lenders use various criteria to assess your borrowing capacity. These typically include:</p><ul><li>Your income and employment history</li><li>Existing debts and financial commitments</li><li>Credit score and repayment history</li><li>Living expenses and spending habits</li><li>The type of loan you're applying for</li></ul><p>By understanding these factors, you can take proactive steps to improve your position well before applying for a loan.</p><h2>Strategies to Improve Your Borrowing Capacity</h2><p>There are several effective approaches to enhancing how much you can borrow:</p><ol><li>Pay down existing debts to improve your debt-to-income ratio</li><li>Increase your savings to demonstrate financial discipline</li><li>Review and correct any errors in your credit report</li><li>Consolidate multiple small debts into one manageable loan</li><li>Maintain stable employment and income</li></ol><p>Remember that improving your borrowing capacity is a journey, not an overnight process. With consistent effort and smart financial habits, you can significantly enhance your options.</p>"
+    excerpt: "Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.",
+    content: `<h1>Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?</h1>
+
+<p class="lead">Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.</p>
+
+<hr />
+
+<h2>The Affordability Equation: Income vs. Expenses</h2>
+
+<p>At its core, borrowing capacity boils down to affordability. Lenders want to ensure you can comfortably repay the loan without undue financial stress. This involves a fundamental assessment of your income and expenses.</p>
+
+<p>Think of it as a simple equation:</p>
+
+<p><strong>Income - Expenses = Funds Available for Repayment</strong></p>
+
+<p>Ideally, the funds available for repayment should be greater than the estimated loan repayments. This ensures you can meet your loan obligations without compromising your essential living expenses.</p>
+
+<hr />
+
+<h2>Income: Not All Income is Created Equal</h2>
+
+<p>While the equation seems straightforward, the nuances lie in how lenders assess your income and expenses.</p>
+
+<ul>
+  <li><strong>Stable and Consistent Income:</strong> Lenders prefer stable and predictable income sources, such as a regular salary. This type of income provides a reliable foundation for assessing your repayment capacity.</li>
+  <li><strong>Variable Income:</strong> If you have variable income (e.g., part-time work, shift work, bonuses, or self-employment income), lenders may apply a "haircut" – meaning they might only consider a portion of that income when calculating your borrowing capacity. This is because variable income is less predictable.</li>
+  <li><strong>Documentation:</strong> Be prepared to provide documentation to support your income claims. This could include payslips, bank statements, or tax returns, depending on your employment situation.</li>
+</ul>
+
+<hr />
+
+<h2>Expenses: Needs vs. Wants</h2>
+
+<p>Lenders scrutinize your expenses to determine how much of your income is truly discretionary.</p>
+
+<ul>
+  <li><strong>Discretionary vs. Non-Discretionary:</strong> Non-discretionary expenses are essential living costs like rent, utilities, groceries, and transport. These are always factored into the affordability calculation. Discretionary expenses, such as entertainment, dining out, and hobbies, may be partially or fully excluded, as these are considered adjustable.</li>
+  <li><strong>Existing Financial Commitments:</strong> Your existing debt obligations (e.g., personal loans, car loans, other credit cards) are treated as non-discretionary expenses. These repayments reduce your available funds for new borrowing.</li>
+  <li><strong>The Credit Card Conundrum:</strong> Credit cards can be a double-edged sword when it comes to borrowing capacity. Lenders typically assume you'll use a portion of your available credit limit, even if you don't currently have a balance. This can significantly impact your borrowing power. For example, if you have a credit card with a $10,000 limit, the lender might assume a monthly liability of 3% of that limit ($300), even if you're not actively using the card.</li>
+</ul>
+
+<hr />
+
+<h2>Beyond the Basics: Lender Overlays and Stress Tests</h2>
+
+<p>While the income-expense equation forms the foundation, lenders often apply additional "overlays" or stress tests to assess your ability to withstand financial shocks.</p>
+
+<ul>
+  <li><strong>Interest Rate Stress Tests:</strong> A common stress test involves assessing your repayment capacity if interest rates were to rise. This is particularly relevant for mortgages, where even a small interest rate increase can significantly impact repayments.</li>
+  <li><strong>Credit Risk Factors:</strong> Lenders also consider your credit history and credit score. A poor credit history or a high level of existing debt can reduce your borrowing capacity.</li>
+</ul>
+
+<hr />
+
+<h2>Maximizing Your Borrowing Power</h2>
+
+<p>While the complexities of borrowing capacity calculations can seem daunting, there are several things you can do to improve your chances of getting approved for the loan amount you need:</p>
+
+<ul>
+  <li><strong>Reduce Expenses:</strong> Identify and reduce unnecessary discretionary spending. This will increase your available funds for loan repayments.</li>
+  <li><strong>Pay Down Existing Debt:</strong> Prioritize paying down existing loans and credit card balances. This improves your debt-to-income ratio and demonstrates responsible financial management.</li>
+  <li><strong>Build a Strong Credit History:</strong> Pay your bills on time, avoid applying for too much credit at once, and maintain a healthy credit mix.</li>
+  <li><strong>Accurate Information:</strong> When applying for a loan, provide accurate and complete information about your income, expenses, and debts.</li>
+  <li><strong>Seek Professional Advice:</strong> A financial advisor or mortgage broker can help you understand your borrowing capacity and guide you through the loan application process.</li>
+</ul>
+
+<hr />
+
+<h2>Understanding the Nuances</h2>
+
+<p>Borrowing capacity is not just a simple calculation; it's a multifaceted assessment that considers various factors. By understanding the key principles, regulatory guidelines, and lender practices, you can take control of your financial situation and maximize your borrowing potential. Remember, responsible financial management and a healthy credit history are crucial for securing the loan you need.</p>`
   },
   {
     id: 3,

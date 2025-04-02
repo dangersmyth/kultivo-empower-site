@@ -10,6 +10,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import About from "./pages/About";
 import ComingSoon from "./pages/ComingSoon";
+import ConscientiousnessQuiz from "./pages/ConscientiousnessQuiz";
 
 const queryClient = new QueryClient();
 
@@ -25,7 +26,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<ComingSoon />} />
-          <Route path="/quiz/conscientiousness" element={<ComingSoon />} />
+          <Route path="/quiz/conscientiousness" element={<ConscientiousnessQuiz />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

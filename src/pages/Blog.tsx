@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -31,7 +30,7 @@ const Blog = () => {
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {blogPosts.map((post) => (
               <div key={post.slug}>
-                {/* Here, we use marked to render markdown content as HTML */}
+                {/* Render the content if it's available */}
                 {post.content && (
                   <div 
                     className="blog-post-content"

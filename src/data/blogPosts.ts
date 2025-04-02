@@ -65,7 +65,7 @@ export const blogPosts: BlogPost[] = [
 
 // This section stores the markdown or textual content for each blog
 const markdownContent2 =
-# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
+"# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
 
 **Excerpt:**  
 Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.
@@ -137,12 +137,12 @@ Borrowing capacity is not just a simple calculation; it's a multifaceted assessm
 
 ## Final Thoughts
 
-Understanding these lesser-known reasons for credit rejections can help you better manage your financial profile. By planning ahead, managing your expenses, and applying strategically, you can improve your chances of securing credit when you need it most. Awareness is key—knowing how lenders assess risk allows you to navigate the credit system more effectively and avoid unnecessary declines.
+Understanding these lesser-known reasons for credit rejections can help you better manage your financial profile. By planning ahead, managing your expenses, and applying strategically, you can improve your chances of securing credit when you need it most. Awareness is key—knowing how lenders assess risk allows you to navigate the credit system more effectively and avoid unnecessary declines."
 
   ;
 
 const markdownContent3 =
-# Surprising Reasons Why People Are Declined for Credit in Australia
+"# Surprising Reasons Why People Are Declined for Credit in Australia
 
 **Excerpt:**  
 While a good credit history and stable income are often key to securing credit, there are many surprising reasons why people are declined. This post explores some of these unexpected factors and provides tips on how to avoid them.
@@ -211,11 +211,11 @@ Changes in lending policies or regulatory requirements (e.g., by the Australian 
 **How to Stay Informed:**
 - Keep up to date with changes in lending regulations.
 - Consult with a mortgage broker or financial advisor if unsure about eligibility.
-- Regularly check your credit report to ensure it accurately reflects your financial situation.
+- Regularly check your credit report to ensure it accurately reflects your financial situation."
 ;
 
 const markdownContent4 =
-# Why Are We Here?
+"# Why Are We Here?
 
 **Excerpt:** Welcome to our blog! We provide insights on lending in Australia, covering loan types, borrowing costs, and credit improvement tips.
 
@@ -266,7 +266,7 @@ To increase your loan approval chances:
 - Have a strong repayment history.
 - Provide accurate information on your application.
 
-We hope you find our blogs helpful!
+We hope you find our blogs helpful!"
 
 
 ;

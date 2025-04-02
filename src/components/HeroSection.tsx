@@ -54,7 +54,7 @@ const HeroSection = () => {
   const navigate = useNavigate();  // Initialize navigate
   
   const handleSignUp = () => {
-    navigate("/ComingSoon");  // Navigate to the ComingSoon page
+    navigate("/SignUp");  // Navigate to the SignUp page
   };
   
   return (

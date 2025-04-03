@@ -1,5 +1,6 @@
+
 import { useEffect, useState } from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -7,7 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getBlogPostBySlug } from "@/data/blogPosts";
 import QuizLanding from "@/components/QuizLanding";
-import { marked } from "marked"; // Ensure marked is imported
+import { marked } from "marked"; // Import marked
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -76,11 +77,11 @@ const BlogPost = () => {
               />
             </div>
             
-            <div className="prose max-w-none">
+            <div className="prose max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-headings:font-bold prose-p:leading-relaxed prose-li:text-gray-700 prose-strong:font-bold">
               {post.type === "Quiz" ? (
                 <QuizLanding />
               ) : post.content ? (
-                <div dangerouslySetInnerHTML={{ __html: marked(post.content) }} />
+                <div dangerouslySetInnerHTML={{ __html: post.content }} />
               ) : (
                 <div className="bg-gray-50 p-8 rounded-lg text-center">
                   <p className="text-lg text-muted-foreground">

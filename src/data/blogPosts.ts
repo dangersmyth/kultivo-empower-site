@@ -1,6 +1,6 @@
-// Import marked library at the top
-import { marked } from 'marked';
 
+// Import marked library
+import { marked } from 'marked';
 
 export interface BlogPost {
   id: number;
@@ -12,10 +12,8 @@ export interface BlogPost {
   content?: string;
 }
 
-
 // This section stores the markdown or textual content for each blog
-const markdownContent2 =
-"# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
+const markdownContent2 = `# Demystifying Borrowing Capacity: How Much Can You Really Borrow in Australia?
 
 **Excerpt:**  
 Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.
@@ -77,22 +75,9 @@ While the complexities of borrowing capacity calculations can seem daunting, the
 
 ## Understanding the Nuances
 
-Borrowing capacity is not just a simple calculation; it's a multifaceted assessment that considers various factors. By understanding the key principles, regulatory guidelines, and lender practices, you can take control of your financial situation and maximize your borrowing potential. Remember, responsible financial management and a healthy credit history are crucial for securing the loan you need.
+Borrowing capacity is not just a simple calculation; it's a multifaceted assessment that considers various factors. By understanding the key principles, regulatory guidelines, and lender practices, you can take control of your financial situation and maximize your borrowing potential. Remember, responsible financial management and a healthy credit history are crucial for securing the loan you need.`;
 
-
-
-
-
----
-
-## Final Thoughts
-
-Understanding these lesser-known reasons for credit rejections can help you better manage your financial profile. By planning ahead, managing your expenses, and applying strategically, you can improve your chances of securing credit when you need it most. Awareness is key—knowing how lenders assess risk allows you to navigate the credit system more effectively and avoid unnecessary declines."
-
-  ;
-
-const markdownContent3 =
-"# Surprising Reasons Why People Are Declined for Credit in Australia
+const markdownContent3 = `# Surprising Reasons Why People Are Declined for Credit in Australia
 
 **Excerpt:**  
 While a good credit history and stable income are often key to securing credit, there are many surprising reasons why people are declined. This post explores some of these unexpected factors and provides tips on how to avoid them.
@@ -101,16 +86,16 @@ While a good credit history and stable income are often key to securing credit, 
 
 ## 1. You Have Significant Assets but No Income
 
-It might seem logical that someone with substantial savings or property should easily qualify for credit. However, if you don’t have a regular income, lenders will likely reject your application. Responsible lending laws require lenders to ensure you can afford repayments based on ongoing income, not just assets.
+It might seem logical that someone with substantial savings or property should easily qualify for credit. However, if you don't have a regular income, lenders will likely reject your application. Responsible lending laws require lenders to ensure you can afford repayments based on ongoing income, not just assets.
 
 **How to Avoid This Issue:**
-- Apply for a credit card while still employed if you’re nearing retirement.
+- Apply for a credit card while still employed if you're nearing retirement.
 - Explore credit options for retirees, such as secured loans.
 - Demonstrate alternative income sources, like rental income or dividends.
 
 ---
 
-## 2. You’re Self-Employed
+## 2. You're Self-Employed
 
 Self-employment can make securing credit harder, even with a high income. Lenders often prefer salaried employees because their income is predictable. For self-employed individuals, proving income stability may require additional documentation, such as tax returns and financial statements.
 
@@ -127,7 +112,7 @@ Lenders look at your bank statements to assess your financial behavior. Gambling
 
 **What You Can Do:**
 - Avoid gambling transactions on your main bank account.
-- Consider using a separate account for gambling if it’s a hobby.
+- Consider using a separate account for gambling if it's a hobby.
 - Regularly monitor your bank statements to ensure responsible spending.
 
 ---
@@ -161,11 +146,15 @@ Changes in lending policies or regulatory requirements (e.g., by the Australian 
 **How to Stay Informed:**
 - Keep up to date with changes in lending regulations.
 - Consult with a mortgage broker or financial advisor if unsure about eligibility.
-- Regularly check your credit report to ensure it accurately reflects your financial situation."
-;
+- Regularly check your credit report to ensure it accurately reflects your financial situation.
 
-const markdownContent4 =
-"# Why Are We Here?
+---
+
+## Final Thoughts
+
+Understanding these lesser-known reasons for credit rejections can help you better manage your financial profile. By planning ahead, managing your expenses, and applying strategically, you can improve your chances of securing credit when you need it most. Awareness is key—knowing how lenders assess risk allows you to navigate the credit system more effectively and avoid unnecessary declines.`;
+
+const markdownContent4 = `# Why Are We Here?
 
 **Excerpt:** Welcome to our blog! We provide insights on lending in Australia, covering loan types, borrowing costs, and credit improvement tips.
 
@@ -216,13 +205,9 @@ To increase your loan approval chances:
 - Have a strong repayment history.
 - Provide accurate information on your application.
 
-We hope you find our blogs helpful!"
+We hope you find our blogs helpful!`;
 
-
-;
-
-const markdownContent5 =
-"# Understanding Interest Rates and Borrowing Costs: What You Need to Know
+const markdownContent5 = `# Understanding Interest Rates and Borrowing Costs: What You Need to Know
 
 **Excerpt:**  
 When you borrow money—whether through a personal loan, credit card, or mortgage—the interest rates and fees play a major role in determining the total cost. This guide breaks down how interest rates work, what fees to watch out for, and how to minimize borrowing costs.
@@ -231,7 +216,7 @@ When you borrow money—whether through a personal loan, credit card, or mortgag
 
 ## 1. Understanding Interest Rates: The Basics
 
-An interest rate is the cost of borrowing money, expressed as a percentage. It’s typically presented as an Annual Percentage Rate (APR), which reflects the yearly cost of borrowing.
+An interest rate is the cost of borrowing money, expressed as a percentage. It's typically presented as an Annual Percentage Rate (APR), which reflects the yearly cost of borrowing.
 
 For example:
 - **Loan**: $1,000 at 12% interest per year = $120 annual interest.
@@ -258,7 +243,7 @@ Personal loans typically have both interest rates and fees:
 - **Example**: $20,000 loan with a 15% interest rate = $3,000 annual interest if unpaid.
 
 ### C. Credit Cards and Revolving Credit
-Credit cards have higher interest rates (15-25%), but if you pay in full each month, there’s no interest. However, if you carry a balance, you’ll incur high-interest charges.
+Credit cards have higher interest rates (15-25%), but if you pay in full each month, there's no interest. However, if you carry a balance, you'll incur high-interest charges.
 
 For example:
 - Borrow $2,000 at 20% interest, repay in 6 months = $200 interest.
@@ -283,7 +268,7 @@ The loan term significantly impacts the total borrowing cost—longer terms mean
 
 ## 4. Comparing Different Borrowing Products
 
-Here’s a quick comparison of borrowing costs for various products:
+Here's a quick comparison of borrowing costs for various products:
 
 | Loan Type      | Amount Borrowed | Interest Rate / Fees   | Loan Term | Total Cost       |
 |----------------|-----------------|------------------------|-----------|------------------|
@@ -325,10 +310,7 @@ Understanding interest rates and fees is essential to avoid excessive borrowing 
 - Compare loan products for the most cost-effective option.
 - Pay off debt as quickly as possible to reduce interest charges.
 
-By staying informed, you can make smarter borrowing decisions and manage your debt responsibly.
-"
-;
-}
+By staying informed, you can make smarter borrowing decisions and manage your debt responsibly.`;
 
 export const blogPosts: BlogPost[] = [
   {
@@ -346,7 +328,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Understanding your borrowing capacity is crucial when considering major purchases like a home or car. This post will help you understand how lenders calculate your borrowing capacity and how you can maximize it.",
-    content: marked(markdownContent2), // Referencing the content defined above
+    content: marked(markdownContent2)
   },
   {
     id: 3,
@@ -355,7 +337,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Discover the unexpected factors that could be affecting your loan applications and how to address them.",
-    content: marked(markdownContent3), // Referencing the content defined above
+    content: marked(markdownContent3)
   },
   {
     id: 4,
@@ -364,8 +346,7 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "Learn about Kultivo's approach to creating a more equitable and intelligent lending system for all Australians.",
-    content: marked(markdownContent4), // Referencing the content defined above
-
+    content: marked(markdownContent4)
   },
   {
     id: 5,
@@ -374,29 +355,10 @@ export const blogPosts: BlogPost[] = [
     type: "Article",
     imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     excerpt: "An in-depth guide to understanding how interest rates work and how they impact your borrowing decisions.",
-    content: marked(markdownContent5), // Referencing the content defined above
-    
-
+    content: marked(markdownContent5)
   }
 ];
 
-  
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
   return blogPosts.find(post => post.slug === slug);
 };
-
-// Convert markdown content to HTML
-
-const htmlContent2 = marked(markdownContent2);
-const htmlContent3 = marked(markdownContent3);
-const htmlContent4 = marked(markdownContent4);
-const htmlContent5 = marked(markdownContent5);
-
-// Convert each markdown content to HTML
-const htmlContents = markdownContents.map(content => marked(content));
-
-// Now you can use htmlContent1, htmlContent2, etc.
-console.log(htmlContent2);
-console.log(htmlContent3);
-console.log(htmlContent4);
-console.log(htmlContent5);

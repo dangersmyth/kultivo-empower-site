@@ -5,21 +5,60 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const ComingSoon = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Sign up with:", { name, email });
-    toast({
-      title: "Thank you!",
-      description: "We will let you know when we launch.",
-    });
-    setName("");
-    setEmail("");
+    
+    if (!name || !email) {
+      toast({
+        title: "Error",
+        description: "Please provide both name and email",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    setIsSubmitting(true);
+    
+    try {
+      // Insert the data into Supabase
+      const { error } = await supabase
+        .from('waitlist')
+        .insert([{ name, email }]);
+        
+      if (error) {
+        console.error("Error submitting to waitlist:", error);
+        toast({
+          title: "Something went wrong",
+          description: "Please try again later",
+          variant: "destructive"
+        });
+      } else {
+        toast({
+          title: "Thank you!",
+          description: "We will let you know when we launch."
+        });
+        // Reset the form
+        setName("");
+        setEmail("");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again later",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   
   return (
@@ -69,8 +108,9 @@ const ComingSoon = () => {
               <Button 
                 type="submit" 
                 className="w-full bg-kultivo-500 hover:bg-kultivo-600"
+                disabled={isSubmitting}
               >
-                Sign up to the waitlist
+                {isSubmitting ? "Signing up..." : "Sign up to the waitlist"}
               </Button>
             </form>
           </div>

@@ -7,16 +7,18 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const ComingSoon = () => {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const { toast } = useToast();
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Sign up with:", email);
+    console.log("Sign up with:", { name, email });
     toast({
-      title: "Thank you for signing up!",
-      description: "We'll notify you when we launch.",
+      title: "Thank you!",
+      description: "We will let you know when we launch.",
     });
+    setName("");
     setEmail("");
   };
   
@@ -46,6 +48,15 @@ const ComingSoon = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="mb-4">
                 <Input
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  className="w-full mb-4"
+                />
+                <Input
                   id="email"
                   type="email"
                   placeholder="Enter your email"
@@ -59,7 +70,7 @@ const ComingSoon = () => {
                 type="submit" 
                 className="w-full bg-kultivo-500 hover:bg-kultivo-600"
               >
-                Notify Me
+                Sign up to the waitlist
               </Button>
             </form>
           </div>
